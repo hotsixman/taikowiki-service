@@ -198,11 +198,13 @@
                 <option value="zh-tw"> 中文(繁体) </option>
                 <option value="zh-cn"> 中文(简体) </option>
             </select>
+            <!--
             <HeaderItem
                 icon="/assets/icon/donate.svg"
                 href="/donate"
                 mobileHideSlot
             />
+            -->
         </svelte:fragment>
     </Header>
     <Main>
@@ -222,7 +224,7 @@
         {#snippet aside()}
             <Aside>
                 <!-- Ad: Suppport -->
-                <SupportAside/>
+                <!--<SupportAside/>-->
                 <!-- /Ad: Suppport -->
                 {#if data.asideBanners}
                     <AsideBanner banners={data.asideBanners} />
