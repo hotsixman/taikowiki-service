@@ -213,7 +213,7 @@
                 <Loading />
             {:else}
                 <!-- Ad: MobileDefault -->
-                <MobileDefaultAd/>
+                <!--<MobileDefaultAd/>-->
                 <!-- /Ad: MobileDefault -->
                 {@render children?.()}
                 {#if $page.url.pathname !== "/song"}
@@ -231,7 +231,7 @@
                 {/if}
                 <AsideNewSong newSongs={data.newSongs} />
                 <!-- Ad: PcSide -->
-                <PcSideAd/>
+                <!--<PcSideAd/>-->
                 <!-- /Ad: PCSide -->
             </Aside>
         {/snippet}

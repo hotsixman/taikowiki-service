@@ -20,9 +20,9 @@
     <MainBanner banners={data.mainBanners} />
     <MainNotice notices={data.recentNotices} />
     <!-- Ad: Pc Index -->
-    <PcIndexAd/>
+    <!--<PcIndexAd/>-->
     <!-- /Ad: Pc Index -->
     <!-- Ad: Mobile Index -->
-    <MobileIndexAd/>
+    <!--<MobileIndexAd/>-->
     <!-- /Ad: Mobile Index -->
 </Center>
