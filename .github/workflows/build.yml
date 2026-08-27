@@ -33,7 +33,7 @@ jobs:
               run: free -h
             
             - name: Build
-              run: bun run build
+              run: NODE_OPTIONS="--max-old-space-size=8192" bun run build
 
             - name: Zip builded application
               run: zip -r build.zip ./package.json ./build
