@@ -24,7 +24,7 @@ jobs:
               run: bun pm cache rm
 
             - name: Install dependencies
-              run: bun install --frozen-lockfile
+              run: bun install --frozen-lockfile --no-symlinks
 
             - name: Install node adapter
               run: bun install @sveltejs/adapter-node
@@ -37,7 +37,7 @@ jobs:
             
             - name: Build
               #run: NODE_OPTIONS="--max-old-space-size=8192" bun run build
-              run: npm run build
+              run: bun run build
 
             - name: Zip builded application
               run: zip -r build.zip ./package.json ./build
